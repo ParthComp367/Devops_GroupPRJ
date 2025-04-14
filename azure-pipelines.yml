@@ -40,7 +40,7 @@ stages:
             displayName: 'Build project'
             inputs:
               command: 'build'
-              projects: '/*.csproj'  # Adjusted to match all .csproj files
+              projects: '**/*.csproj'  # Adjusted to match all .csproj files
               arguments: '--configuration $(buildConfiguration)'
 
           - task: DotNetCoreCLI@2
