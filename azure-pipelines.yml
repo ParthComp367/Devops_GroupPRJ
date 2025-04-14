@@ -87,7 +87,7 @@ stages:
                   displayName: 'Copy files to dev environment'
                   inputs:
                     SourceFolder: '$(Pipeline.Workspace)/mvc-app-drop'
-                    Contents: ''
+                    Contents: '**/*'
                     TargetFolder: '$(System.DefaultWorkingDirectory)/dev-deploy'
 
                 # Mock deployment step
